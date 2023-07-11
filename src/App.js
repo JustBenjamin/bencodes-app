@@ -1,17 +1,21 @@
 
 import React from 'react';
 import Header from './components/header';
+import Skills from './components/skills';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <Header />
+      <Skills />
       
        
-     <h1>Benjamin Hove</h1>
-     <h2>Frontend Dev</h2>
-    </div>
+     
+  
+     <a  target="_blank" rel="noreferrer" href="https://icons8.com">Icons by Icons8</a>
+    
+</div>
   );
 }
 

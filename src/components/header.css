@@ -1,17 +1,24 @@
 
 .header {
     width: 100vw;
+    margin-bottom: 10rem;
 
 } 
 
 
 nav {
     display: flex;
+    position:sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
     justify-content: space-between;
     align-items: center;
     width: 90vw;
     margin: 1rem auto;
-    padding: 3rem 2rem;
+    padding: 2rem 2rem;
+    background-color: #1e1e1eb6;
+ 
 }
 
 
@@ -28,7 +35,13 @@ li a {
     color: var(--light);
     text-decoration: none;
     font-weight: 700;
+    border-bottom: 2px solid;
 
+}
+
+li, a:hover {
+    color:#daa520;
+    border-bottom-color: #daa520;
 }
 
 .hero {
@@ -39,31 +52,83 @@ li a {
     margin: 4rem auto;
 }
 
+
+
+
 .hero-text {
     text-align: left;
 }
 
 .hero-text > h1 {
+    
     font-size: 4rem;
+    width: 70%;
+   
+  }
+  
+
+
+
+
+.cta {
+    display: flex;
+    align-items: center;
 }
 
+.medium, .github, .linkedin {
+   
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+
+.linkedin {
+    height: 55px;
+}
+
+.github {
+    height: 55px;
+}
+
+.medium {
+    height: 50px;
+}
+
+
+
+
+
+
+
 .hero-image {
-    background-color: gainsboro;
+    background-image: linear-gradient(#daa520, #86754a, #cac8c3);
     border-radius: 50%;
-    border: 5px solid goldenrod;
+    animation: hey ease-in-out 4s infinite alternate;
+    
    
 }
 
 .benjamin {
     border-radius: 50%;
-    border: 5px solid goldenrod;
     width: 18rem;
-    margin: 0;
-    animation: hey ease-in-out 5s infinite alternate;
+    margin: -3.5px;
+   
     
 }
 
 @keyframes hey {
-    0% { transform: rotate(15deg); }
-    100% { transform: rotate(-15deg); }
+    0% { transform: rotate(5deg); }
+    100% { transform: rotate(-5deg); }
+  }
+
+
+  @media screen and (max-width: 1920px) {
+    .hero-text > h1 {
+    
+        font-size: 3rem;
+        width: 80%;
+        
+       
+      }
+    
   }
