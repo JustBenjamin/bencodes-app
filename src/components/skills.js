@@ -23,6 +23,26 @@ export default function Skills() {
                 <img src={reactIcon} alt=""/>
                     React</li>
             </ul>
+
+            <div className="pro">
+                <div className="proficiencies">
+                    <h2>Proficiencies</h2>
+                    <p> HTML/CSS/JS | React | Tailwind CSS | Bootstrap | Git | 
+                        TypeScript | APIs | Python | UI/UX Design (Figma) | 
+                        Graphic Design (Photoshop) | Accessibility | SEO
+                    </p>
+                </div>
+
+                <div className="education">
+                    <h2>Education</h2>
+                    <p>Master's degree in Computer Science</p>
+                    <p>Bachelor's degree in Business Administration</p>
+                    <p>Associate's degree in Web Development</p>
+
+                </div>
+
+
+            </div>
         </div>
     )
 

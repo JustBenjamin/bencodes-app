@@ -2,6 +2,8 @@
 import React from 'react';
 import Header from './components/header';
 import Skills from './components/skills';
+import Work from './components/work';
+import Contact from "./components/contact";
 import './App.css';
 
 function App() {
@@ -9,11 +11,8 @@ function App() {
     <div className="App">
       <Header />
       <Skills />
-      
-       
-     
-  
-     <a  target="_blank" rel="noreferrer" href="https://icons8.com">Icons by Icons8</a>
+      <Work />
+      <Contact />
     
 </div>
   );
