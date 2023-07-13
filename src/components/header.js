@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from 'react';
 import './header.css';
 import heroImage from "../ProfilePicture.png";
 import medium from "../icons/medium-png.png";
@@ -10,6 +11,13 @@ import linkedin from "../icons/linkedin.png";
 
 export default function Header() {
 
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
+
 
 
     return (
@@ -18,18 +26,33 @@ export default function Header() {
                 <div>
                     <h2>BH</h2>
                 </div>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
 
-                <div className="theme">
-                <span>🌙</span>
-                <span></span>
+                <div className="hamburger-menu">
+                <div className={`hamburger ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
+                    <span className="line"></span>
+                    <span className="line"></span>
+                    <span className="line"></span>
                 </div>
+                    
+                    <ul className={`menu ${isOpen ? 'open' : ''}`}>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
+
+                        <div className="theme">
+                        <span>🌙</span>
+                        <span></span>
+                        </div>
+                    </ul>
+
+
+                    
+
+                </div>
+                
+
+
             </nav>
 
             <div className="hero">
@@ -66,4 +89,6 @@ export default function Header() {
 
         </div>
     )
+
+    
 }

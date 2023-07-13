@@ -66,3 +66,24 @@
     background-color: var(--light);
     color: var(--dark)
 }
+
+@media screen and (max-width: 820px) {
+
+    .work {
+        margin-top: 8rem;
+    }
+
+    .section {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .project {
+        margin: 3rem;
+    }
+
+    .project > img {
+        width: 90%;
+    }
+
+}
