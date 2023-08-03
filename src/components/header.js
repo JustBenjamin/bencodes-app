@@ -40,10 +40,7 @@ export default function Header() {
                         <li><a href="#work">Work</a></li>
                         <li><a href="#contact">Contact</a></li>
 
-                        <div className="theme">
-                        <span>🌙</span>
-                        <span></span>
-                        </div>
+                       
                     </ul>
 
 
